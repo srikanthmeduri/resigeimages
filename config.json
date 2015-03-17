@@ -1,0 +1,14 @@
+{
+  "SM": {
+    "width":240,
+    "height":240
+  },
+  "MD": {
+    "width":540,
+    "height":540
+  },
+  "LG": {
+    "width":740,
+    "height":740
+  }
+}

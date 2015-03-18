@@ -1,14 +1,14 @@
 {
-  "SM": {
-    "width":240,
-    "height":240
-  },
-  "MD": {
-    "width":540,
-    "height":540
-  },
-  "LG": {
-    "width":740,
-    "height":740
-  }
+    "small": {
+        "width": 200,
+        "height": 200
+    },
+    "medium": {
+        "width": 400,
+        "height": 400
+    },
+    "large": {
+        "width": 600,
+        "height": 600
+    }
 }

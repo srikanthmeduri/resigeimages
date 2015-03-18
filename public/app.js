@@ -1,4 +1,4 @@
-$('#myForm').submit(function (e) {
+$('#myForm').submit(function(e) {
     e.preventDefault();
     $.ajax({
         url: '/upload',
@@ -6,15 +6,15 @@ $('#myForm').submit(function (e) {
         data: new FormData(this),
         processData: false,
         contentType: false,
-        success: function (data) {
+        success: function(data) {
             console.log(data);
             var s = '';
-            s += '<a href="' + data.small + '">Small</a><br>';
-            s += '<a href="' + data.medium + '">Medium</a><br>';
-            s += '<a href="' + data.large + '">Large</a><br>';
+            s += '<a target="_blank" href="' + data.small + '">Small</a><br>';
+            s += '<a target="_blank" href="' + data.medium + '">Medium</a><br>';
+            s += '<a target="_blank" href="' + data.large + '">Large</a><br>';
             $('#links').html(s).show();
         },
-        error: function (e) {
+        error: function(e) {
             console.log(e);
         }
     });

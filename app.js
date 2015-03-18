@@ -1,19 +1,14 @@
 "use strict";
-
 var express = require('express');
 var app = express();
-
 var formidable = require('formidable');
 var util = require('util');
 var fs = require('fs-extra');
-
-
 var path = require('path');
 var morgan = require('morgan');
 var bodyParser = require('body-parser');
 var port = 3000;
 var env = process.env.NODE_ENV || 'development';
-
 if ('development' == env) {
     //app.use(morgan('dev')); 	// log every request to the console
 }
